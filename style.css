@@ -58,6 +58,7 @@ header h2{
 /* || HTML */
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -70,10 +71,11 @@ html{
 
 
 /* || BODY */
-/* body{
+body{
+    max-width: 100%;
+    overflow: hidden;
   
-  
-} */
+}
 
 
 
@@ -170,6 +172,8 @@ header nav ul li a:hover{
     justify-content: space-between;
     margin: var(--theonemargin);
    padding-top: 0.5rem;
+ 
+  
    
 }
 .navformobile h2{
@@ -215,6 +219,7 @@ header nav ul li a:hover{
    flex-direction: column;
    gap: 0.2rem;
    position: relative;
+
 }
 .bar{
     margin: 0rem auto;
@@ -232,9 +237,10 @@ header nav ul li a:hover{
     background-color: white;
     top: 0px;
     transition: 0.4s;
+   
 }
 .mobileul.active{
-    left: 0%;
+   left: 0%;
 }
  body .navformobile .mobileul li{
     padding: 1rem 1.5rem;

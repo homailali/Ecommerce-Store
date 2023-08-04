@@ -205,6 +205,9 @@ header nav ul li a:hover{
 .navformobile a{
     color: #577592;
 }
+.hamburger.active{
+    gap: 0.36rem;
+}
 .hamburger{
     cursor: pointer;
     margin-top: 0.4rem;

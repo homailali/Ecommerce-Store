@@ -505,7 +505,7 @@ input,button,textarea,::placeholder{
 .socialmedia i{
 
    color: #0ab565;
-   font-size: 2.2rem;
+   font-size: 1.9rem;
    margin: 1.3rem 1rem 0.7rem 0rem;
 }
  
@@ -647,6 +647,11 @@ main :is(h2,#e){
 .secondp{
     width: 60%;
 }
+.socialmedia i{
+ 
+    font-size: 2.6rem;
+ 
+ }
 }
 
 
@@ -707,7 +712,7 @@ main :is(h2,#e){
     width: 65%;
  }
 }
- 
+ /* Image setting for landscape */
 @media (max-height:400px){
     
  

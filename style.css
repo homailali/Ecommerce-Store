@@ -613,7 +613,7 @@ main :is(h2,#e){
     }
    .secondarticle{
      justify-content: space-between;
-     align-items: center;
+     align-items:end;
    }
    .secondarticle .secondsection{
     padding:0rem 1rem;

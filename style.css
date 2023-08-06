@@ -266,7 +266,7 @@ header nav ul li a:hover{
 }
 .bgimage .firstsection p{
     text-align: justify;
-    word-spacing: -1px;
+    word-spacing:  -1px;
     font-size: var(--psize);
     line-height: var(--lineheight);
 }

@@ -254,6 +254,7 @@ header nav ul li a:hover{
 .bgimage .firstsection{
     display: flex;
     flex-direction: column;
+  
     margin: var(--theonemargin);
     color: var(--whitecolor);
     text-align: var(--textalign);
@@ -271,8 +272,10 @@ header nav ul li a:hover{
     line-height: var(--lineheight);
 }
 .bgimage .firstsection img{
+     
     width: 100%;
     vertical-align: bottom;
+    
 }
 .para{
     text-align:var(--textalign);
@@ -317,6 +320,7 @@ body main .secondbigerarticle{
     margin: var(--theonemargin);
  
 }
+.secondarticle
 main .secondarticle{
     display: flex;
     flex-direction: column;
@@ -468,12 +472,36 @@ input,button,textarea,::placeholder{
     margin-top: 1rem;
     border: none;
     font-size: 1.2rem;
+    background-color: white;
+    color: #577592;
+    border: 1.5px solid grey;
+    position: relative;
+    z-index: 1;
+}
+.thirdarticle button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0%;
     background: #0ab565;
-    color: rgba(245, 245, 245);
+    
+    transition: 0.8s;
+    z-index: -1;
 }
-.thirdsection  :is(button:active,button:focus){
+button:hover::before{
+    width: 100%;
+    
+}
+button:hover{
+    color: white;
+    border:1.5px solid white;
+    
+}
+/* .thirdsection  :is(button:active,button:focus){
     opacity: 0.8;
-}
+} */
 /* SECTION 2 */
 .thirdarticle .address{
     background-color: var(--whitecolor);
@@ -731,6 +759,7 @@ main :is(h2,#e){
     
  
     body .bgimage .firstsection img{
+        text-align:center;
         width: 55%;
     }
     body   .secondarticle img{
@@ -747,16 +776,18 @@ main :is(h2,#e){
 
 @media (min-width:550px) and (max-width:765px){
     
- 
+    
     body .bgimage .firstsection img{
         width: 55%;
     }
+    body .bgimage .firstsection .image{
+        text-align: center; 
+    }
+
     body   .secondarticle img{
         width: 55%;
     }
-    /* body .thelargestarticle .featuredproducts .actualproducts img{
-       
-    } */
+    
     body .thelargestarticle .featuredproducts .actualproducts  {
          margin: 0rem auto;
          width: 90%;

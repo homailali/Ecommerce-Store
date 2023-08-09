@@ -472,34 +472,12 @@ input,button,textarea,::placeholder{
     margin-top: 1rem;
     border: none;
     font-size: 1.2rem;
-    background-color: white;
-    color: #577592;
-    border: 1.5px solid grey;
-    position: relative;
-    z-index: 1;
-}
-.thirdarticle button::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 0%;
     background: #0ab565;
-    
-    transition: 0.8s;
-    z-index: -1;
+    color: rgba(245, 245, 245);
 }
-.thirdarticle button:focus::before{
-    width: 100%;
-}
-.thirdarticle button:focus{
-    color: white;
-    border: 1.5px solid white;
-}
-/* .thirdsection  :is(button:active,button:focus){
+.thirdsection  :is(button:active,button:focus){
     opacity: 0.8;
-} */
+}
 /* SECTION 2 */
 .thirdarticle .address{
     background-color: var(--whitecolor);
@@ -601,7 +579,39 @@ footer{
 
 /* Media Query for ipads or tablets*/
 @media (min-width:765px){
-
+    .thirdarticle button{
+        cursor: pointer;
+        text-align: var(--textalign);
+        width: 100%;
+        padding: 0.7rem 0rem;
+        margin-top: 1rem;
+        border: none;
+        font-size: 1.2rem;
+        background-color: white;
+        color: #577592;
+        border: 1.5px solid grey;
+        position: relative;
+        z-index: 1;
+    }
+    .thirdarticle button::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: #0ab565;
+        
+        transition: 0.8s;
+        z-index: -1;
+    }
+    .thirdarticle button:hover::before{
+        width: 100%;
+    }
+    .thirdarticle button:hover{
+        color: white;
+        border: 1.5px solid white;
+    }
 
 .bgimage .firstsection{
     flex-direction: row;

@@ -320,7 +320,7 @@ body main .secondbigerarticle{
     margin: var(--theonemargin);
  
 }
-.secondarticle
+ 
 main .secondarticle{
     display: flex;
     flex-direction: column;
@@ -440,7 +440,7 @@ main .featuredproducts .actualproducts #color2{
     outline: none;
     border:1.5px solid grey;
     width: 100%;
-    color: var(--pcolor);
+    /* color: var(--pcolor); */
     padding: 0.8rem;
 }
 .thirdarticle textarea{
@@ -456,7 +456,7 @@ main .featuredproducts .actualproducts #color2{
     color: #183b56;
 }
 textarea{
-    color: var(--pcolor);
+    /* color: var(--pcolor); */
     font-size: 1.2rem;
     border: 1.5px solid grey;
     resize: none;
@@ -654,6 +654,7 @@ main :is(h2,#e){
     flex-direction: row;
     }
    .secondarticle{
+  
      justify-content: space-between;
      align-items:end;
    }

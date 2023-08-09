@@ -490,14 +490,12 @@ input,button,textarea,::placeholder{
     transition: 0.8s;
     z-index: -1;
 }
-button:hover::before{
+.thirdarticle button:focus::before{
     width: 100%;
-    
 }
-button:hover{
+.thirdarticle button:focus{
     color: white;
-    border:1.5px solid white;
-    
+    border: 1.5px solid white;
 }
 /* .thirdsection  :is(button:active,button:focus){
     opacity: 0.8;
@@ -603,6 +601,7 @@ footer{
 
 /* Media Query for ipads or tablets*/
 @media (min-width:765px){
+
 
 .bgimage .firstsection{
     flex-direction: row;
@@ -781,7 +780,8 @@ main :is(h2,#e){
         width: 55%;
     }
     body .bgimage .firstsection .image{
-        text-align: center; 
+        text-align: center;
+ 
     }
 
     body   .secondarticle img{

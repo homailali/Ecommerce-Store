@@ -612,7 +612,9 @@ footer{
         color: white;
         border: 1.5px solid white;
     }
-
+    .thirdsection  :is(button:active,button:focus){
+        opacity:1;
+    }
 .bgimage .firstsection{
     flex-direction: row;
 }
